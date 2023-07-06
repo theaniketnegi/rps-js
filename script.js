@@ -35,8 +35,3 @@ function play(rounds) {
     alert(playRound(computerChoice, playerChoice));
   }
 }
-
-setTimeout(function () {
-  let rounds = prompt("Enter number of rounds");
-  play(rounds);
-}, 500);
