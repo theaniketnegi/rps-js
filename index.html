@@ -14,19 +14,28 @@
         <h1 class="heading">rock paper scissors</h1>
         <div class="players-container">
             <div class="player">
-                <p>Player score: </p>
-                <div class="btn-container"><button>Rock</button>
-                    <button>Paper</button>
-                    <button>Scissors</button>
+                <p>Player score: <span id="player-score">0</span></p>
+                <div class="btn-container">
+                    <button class="choice" data-choice="rock">Rock</button>
+                    <button class="choice" data-choice="paper">Paper</button>
+                    <button class="choice" data-choice="scissors">Scissors</button>
                 </div>
 
             </div>
             <div class="cpu">
-                <p>CPU score: </p>
-                <p>CPU selected: </p>
+                <p>CPU score: <span id="cpu-score">0</span></p>
+                <div class="cpu-selected">
+                    <p>CPU selected: <strong id="cpu-selection"></strong></p>
+                </div>
             </div>
         </div>
     </main>
+    <h3 id="comments">
+        make a choice
+    </h3>
+    <button id = "reset">
+        Reset
+    </button>
 </body>
 
 </html>

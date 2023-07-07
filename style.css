@@ -12,6 +12,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 main{
@@ -22,15 +23,25 @@ main{
 }
 .players-container{
     display:flex;
-    gap:50px;
-    justify-content: center;
+    justify-content: space-between;
     margin: 5em 0;
+    gap: 50px;
 }
 .player, .cpu{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+
+.cpu{
+    width: 200px;
+}
+.btn-container,.cpu-selected{
+    margin-top: 3em;
+}
+#reset{
+    margin-top: 1.25em;
 }
 button{
     background-color: rgb(50, 112, 50);
@@ -38,4 +49,11 @@ button{
     color:white;
     border-radius: 5px;
     padding: 0.5em 1em;
+}
+
+button:hover{
+    background-color: rgb(63, 139, 63);
+}
+button:active{
+    background-color: rgb(44, 99, 44);
 }
